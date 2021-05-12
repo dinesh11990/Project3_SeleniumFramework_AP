@@ -9,28 +9,19 @@ import org.testng.log4testng.Logger;
 
 import com.may.commonFunctions.BaseClass;
 import com.may.pageObjects.AddCustomerPageObjects;
-import com.may.pageObjects.LoginPageObjects;
 
 public class TCLogin002 extends BaseClass {
 
 	static Logger logger=Logger.getLogger(TCLogin002.class);
 
-
-	public void login(){
-
-		logger.info("Logging in to the application");
-		PageFactory.initElements(driver, LoginPageObjects.class);
-		LoginPageObjects.txtUsername.sendKeys(properties.getProperty("username"));
-		LoginPageObjects.txtPassword.sendKeys(properties.getProperty("password"));
-		LoginPageObjects.submitButton.click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	}
-
 	@Test
-	public void custDetails() throws InterruptedException{
+	public void custDetails(){
+		
+		logger.info("Entered all the given details in customer section");
 
-		login();
 		PageFactory.initElements(driver, AddCustomerPageObjects.class);
+
+
 		AddCustomerPageObjects.lnkAddNewCustomer.click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		AddCustomerPageObjects.custName.sendKeys("dinesh");
@@ -46,17 +37,19 @@ public class TCLogin002 extends BaseClass {
 		AddCustomerPageObjects.pwd1.sendKeys("sdfsafdfs");
 		AddCustomerPageObjects.sub.click();
 
-		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		Thread.sleep(3000);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
 
 		boolean res = driver.getPageSource().contains("Customer Registered Successfully!!!");
 
 		if(res==true)
 		{
 			Assert.assertTrue(true);
+			logger.info("Login Test Passed");
 		}else{
 
 			Assert.assertTrue(false);
+			logger.info("Login Test Failed");
 		}
 
 

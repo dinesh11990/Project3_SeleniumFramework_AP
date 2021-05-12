@@ -16,7 +16,9 @@ public class TCLogin001 extends BaseClass{
 	public void login() throws InterruptedException{
 		
 		logger.info("Logging in to the application");
+		
 		PageFactory.initElements(driver, LoginPageObjects.class);
+		
 		LoginPageObjects.txtUsername.sendKeys(properties.getProperty("username"));
 		LoginPageObjects.txtPassword.sendKeys(properties.getProperty("password"));
 		LoginPageObjects.submitButton.click();

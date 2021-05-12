@@ -39,6 +39,7 @@ public class BaseClass {
 	@BeforeSuite
 	public void launchBrowser(){
 		
+		//To configure log4j
 		PropertyConfigurator.configure("log4j.properties");
 		
 		logger.info("Web Application Begins");
@@ -74,7 +75,15 @@ public class BaseClass {
 		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		}
-	    //Need to add the library commons.lang3
+
+	@AfterSuite
+	public void tearDown()
+	{
+		logger.info("Execution done");
+		driver.quit();
+	}
+	
+	   //Need to add the library commons.lang3
 		//random string
 			public String randomString()
 			{
@@ -88,11 +97,5 @@ public class BaseClass {
 				return generatedNumber;
 			}
 	
-	@AfterSuite
-	public void tearDown()
-	{
-		logger.info("Execution done");
-		driver.quit();
-	}
 
 }
