@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [InetBanking]">
+  <test name="BankingApp(failed)">
+    <classes>
+      <class name="com.may.testCases.TCLogin001">
+        <methods>
+          <include name="login"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.may.testCases.TCLogin001 -->
+    </classes>
+  </test> <!-- BankingApp(failed) -->
+</suite> <!-- Failed suite [InetBanking] -->
