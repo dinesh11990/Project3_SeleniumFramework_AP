@@ -3,16 +3,16 @@
 
 <suite name="InetBanking">
 
-<test name="BankingApp">
+	<test name="BankingApp">
 
-<classes>
+		<classes>
 
-<class name="com.may.testCases.TCLogin001"></class>
+			<class name="com.may.testCases.TCLogin001"></class>
 
-</classes>
+		</classes>
 
 
-</test>
+	</test>
 
 
 </suite>
