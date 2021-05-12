@@ -2,6 +2,8 @@ package com.may.commonFunctions;
 import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -72,6 +74,19 @@ public class BaseClass {
 		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		}
+	    //Need to add the library commons.lang3
+		//random string
+			public String randomString()
+			{
+				String generatedString = RandomStringUtils.randomAlphabetic(8);
+				return generatedString;
+			}
+		//random numbers
+			public String randNumber()
+			{
+				String generatedNumber = RandomStringUtils.randomNumeric(5);
+				return generatedNumber;
+			}
 	
 	@AfterSuite
 	public void tearDown()

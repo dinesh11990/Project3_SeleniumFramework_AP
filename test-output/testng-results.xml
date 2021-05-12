@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="InetBanking" duration-ms="1346" started-at="2021-05-12T09:18:53Z" finished-at="2021-05-12T09:18:54Z">
+  <suite name="Default suite" duration-ms="4669" started-at="2021-05-12T11:44:15Z" finished-at="2021-05-12T11:44:20Z">
     <groups>
     </groups>
-    <test name="BankingApp" duration-ms="1346" started-at="2021-05-12T09:18:53Z" finished-at="2021-05-12T09:18:54Z">
+    <test name="Default test" duration-ms="4669" started-at="2021-05-12T11:44:15Z" finished-at="2021-05-12T11:44:20Z">
       <class name="com.may.testCases.TCLogin001">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.may.testCases.TCLogin001@573f2bb1]" name="launchBrowser" is-config="true" duration-ms="11201" started-at="2021-05-12T11:18:42Z" finished-at="2021-05-12T11:18:53Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.may.testCases.TCLogin001@573f2bb1]" name="launchBrowser" is-config="true" duration-ms="4141" started-at="2021-05-12T13:44:11Z" finished-at="2021-05-12T13:44:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.may.testCases.TCLogin001@573f2bb1]" name="login" duration-ms="1313" started-at="2021-05-12T11:18:53Z" finished-at="2021-05-12T11:18:54Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.may.testCases.TCLogin001@573f2bb1]" name="login" duration-ms="4626" started-at="2021-05-12T13:44:15Z" finished-at="2021-05-12T13:44:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.may.testCases.TCLogin001@573f2bb1]" name="tearDown" is-config="true" duration-ms="830" started-at="2021-05-12T11:18:55Z" finished-at="2021-05-12T11:18:55Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.may.testCases.TCLogin001@573f2bb1]" name="tearDown" is-config="true" duration-ms="750" started-at="2021-05-12T13:44:20Z" finished-at="2021-05-12T13:44:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.may.testCases.TCLogin001 -->
-    </test> <!-- BankingApp -->
-  </suite> <!-- InetBanking -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

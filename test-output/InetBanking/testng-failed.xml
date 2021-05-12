@@ -5,10 +5,15 @@
     <classes>
       <class name="com.may.testCases.TCLogin001">
         <methods>
-          <include name="login"/>
+          <include name="tearDown"/>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- com.may.testCases.TCLogin001 -->
+      <class name="com.may.testCases.TCLogin002">
+        <methods>
+          <include name="custDetails"/>
+        </methods>
+      </class> <!-- com.may.testCases.TCLogin002 -->
     </classes>
   </test> <!-- BankingApp(failed) -->
 </suite> <!-- Failed suite [InetBanking] -->

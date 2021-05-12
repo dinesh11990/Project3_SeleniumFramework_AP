@@ -8,6 +8,7 @@
 		<classes>
 
 			<class name="com.may.testCases.TCLogin001"></class>
+			<class name="com.may.testCases.TCLogin002"></class>
 
 		</classes>
 
@@ -16,3 +17,5 @@
 
 
 </suite>
+
+
